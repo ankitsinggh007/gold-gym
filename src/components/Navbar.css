@@ -1,0 +1,46 @@
+.logo_name{
+    font-size:1.5rem;
+    color:black;
+}
+.item{
+    color: black;
+    margin-left: 40px;
+    
+}
+.buttoni{
+    background-color:#161619;
+    padding:12px;
+    font-size:1.3rem;
+    color:white;
+    margin-left: 40px;
+}
+.avataar{
+    background-color: black;
+    position: absolute;
+    top: 70px;
+    color: white;
+    z-index: 10;
+  }
+  @media screen and (max-width:755px){
+    .item{
+        font-size: medium;
+    }
+    
+  }
+  @media screen and (max-width:540px){
+   .item{
+      font-size: x-small;
+      margin-left: 10px;
+
+ 
+   }
+   .buttoni{
+    padding: 0px;
+    font-size: x-small;
+    color: white;
+
+   }
+   .logo_name{
+    display: none;
+   }
+}

@@ -1,0 +1,45 @@
+.Box {
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    height: 50vh;
+    width:30vw;
+    border-radius: 10px;
+    font-size: large;
+    margin: auto auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.Container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 80vh;
+    margin-top:15px;
+    background-image: url("../assets/images/image-1.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+
+.mb-4 {
+    padding: 5px;
+}
+
+@media screen and (max-width:580px) {
+    .Box {
+        width: auto;
+        margin: auto;
+    }
+
+    .Container {
+        height: 90vh;
+        background-size: contain;
+    }
+}
