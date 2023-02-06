@@ -78,6 +78,8 @@ function App() {
         const errorCode = error.code;
         const errorMessage = error.message;
         setCreadential({ ...Creadential, message: errorCode.split("/")[1] })
+        alert(`${errorCode.split("/")[1]}`)
+
 
       });
   }
@@ -93,6 +95,7 @@ function App() {
         const errorCode = error.code;
         const errorMessage = error.message;
         setCreadential({ ...Creadential, message: errorCode.split("/")[1] })
+        alert(`${errorCode.split("/")[1]}`)
 
       });
 

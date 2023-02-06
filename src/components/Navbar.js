@@ -73,7 +73,10 @@ const Navbar = () => {
         alignItems='flex-end'
       >
         <NavLink  to='/' className='item'>Home</NavLink>
-        <NavLink  to='/exercise'className='item'>Exercises</NavLink>
+        {LoggedInUserData.isAuthrized &&
+          <NavLink  to='/exercise'className='item'>Exercises</NavLink>}
+          {!LoggedInUserData.isAuthrized &&
+            <NavLink style={{color:"grey"}} onClick={()=>alert(`login to open exercises tab`)}  className='item'>Exercises</NavLink>}
         <NavLink to="/about" className='item'> About</NavLink>
         <NavLink  to="/contact" className='item'> Contact</NavLink>
         {
@@ -83,7 +86,7 @@ const Navbar = () => {
 }
 {
   LoggedInUserData.isAuthrized && 
-<div style={{positon:"relative"}}>
+<div style={{positon:"relative",marginLeft:"40px"}}>
 <Avatar
   onClick={Toggle}
   sx={{ bgcolor:pink[400] }}
