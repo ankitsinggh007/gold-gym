@@ -177,7 +177,8 @@ const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
 							<div class="title">GYM</div>
 							<h4><NavLink to="/">Psycho Training</NavLink></h4>
 							<div class="text">Winning means you’re willing to go longer, work harder for more.</div>
-							<NavLink class="read-more" to="/">Read More</NavLink>
+							<a class="read-more" href="/">Read More</a>
+
 						</div>
 					</div>
 				</div>

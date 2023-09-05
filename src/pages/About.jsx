@@ -13,6 +13,8 @@ import review4 from "../images/F4F JPEG/Review-from-you-4.jpg"
 import { NavLink } from 'react-router-dom'
 import imag3 from "../images/background/11.jpg"
 import Banner from "../components/Banner"
+import {SlSocialInstagram,SlSocialFacebook,SlSocialGithub,SlSocialTwitter} from "react-icons/sl"
+
 function About() {
   return (
     <div>
@@ -157,13 +159,12 @@ function About() {
 
                         <span class="share-now fa fa-share-alt"></span>
 
-                        <a href="#"><span class="fa fa-facebook"></span></a>
+                        <a href="#"><span ><SlSocialFacebook /></span></a>
 
-                        <a href="#"><span class="fa fa-twitter"></span></a>
+                        <a href="#"><span ><SlSocialTwitter/></span></a>
 
-                        <a href="#"><span class="fa fa-dribbble"></span></a>
+                        <a href="#"><span ><SlSocialInstagram/></span></a>
 
-                        <a href="#"><span class="fa fa-behance"></span></a>
 
                     </div>
 
@@ -196,19 +197,18 @@ function About() {
 
                 <div class="shared-boxed">
 
-                    <div class="shared-inner">
+                <div class="shared-inner">
 
-                        <span class="share-now fa fa-share-alt"></span>
+<span class="share-now fa fa-share-alt"></span>
 
-                        <a href="#"><span class="fa fa-facebook"></span></a>
+<a href="#"><span ><SlSocialFacebook /></span></a>
 
-                        <a href="#"><span class="fa fa-twitter"></span></a>
+<a href="#"><span ><SlSocialTwitter/></span></a>
 
-                        <a href="#"><span class="fa fa-dribbble"></span></a>
+<a href="#"><span ><SlSocialInstagram/></span></a>
 
-                        <a href="#"><span class="fa fa-behance"></span></a>
 
-                    </div>
+</div>
 
                 </div>
 
@@ -239,19 +239,18 @@ function About() {
 
                 <div class="shared-boxed">
 
-                    <div class="shared-inner">
+                <div class="shared-inner">
 
-                        <span class="share-now fa fa-share-alt"></span>
+<span class="share-now fa fa-share-alt"></span>
 
-                        <a href="#"><span class="fa fa-facebook"></span></a>
+<a href="#"><span ><SlSocialFacebook /></span></a>
 
-                        <a href="#"><span class="fa fa-twitter"></span></a>
+<a href="#"><span ><SlSocialTwitter/></span></a>
 
-                        <a href="#"><span class="fa fa-dribbble"></span></a>
+<a href="#"><span ><SlSocialInstagram/></span></a>
 
-                        <a href="#"><span class="fa fa-behance"></span></a>
 
-                    </div>
+</div>
 
                 </div>
 

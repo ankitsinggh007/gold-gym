@@ -29,7 +29,7 @@ function App() {
   const [Data, setData] = useState();
   const Navigate = useNavigate();
   const [Creadential, setCreadential] = useState({ fname: "", lname: "", email: "", Role: "", Password: "" });
-  const [LoggedInUserData, setLoggedInUserData] = useState({ id: "", firstName: "", lastName: "", email: "", Role: "", isAuthrized: false,Cart: [],acces:[],Donated:[] ,Request:[]});
+  const [LoggedInUserData, setLoggedInUserData] = useState({ id: "", firstName: "", lastName: "", email: "", Role: "", isAuthrized: true,Cart: [],acces:[],Donated:[] ,Request:[]});
   const [Message, setMessage] = useState("");
 
 
@@ -37,15 +37,15 @@ function App() {
 
   //  Fetch Data
   const FetchData = async (email) => {
-    console.log("hi")
-    console.log(email)
+
     const citiesRef = collection(DataBase, "User");
     const q = query(citiesRef, where("email", "==", `${email}`));
     const querySnapshot = await getDocs(q);
 
     querySnapshot.forEach((doc) => {
       setLoggedInUserData({ ...LoggedInUserData, ...doc.data(), isAuthrized: true, id: doc.id });
-      Navigate(`/`)
+      Navigate(`/home/${doc.data().Role}`)
+      
   });
   }
 
@@ -110,7 +110,7 @@ function App() {
         <Route path='/' element={ <Home /> } />
         <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/exercise" element={<Exercise />} />
+          {/* <Route path="/exercise" element={<Exercise />} /> */}
           <Route path="/about" element={<About/>}/>
           <Route path="/contact" element={<Contact />}/>
         <Route path='/exercise/:id' element = {<ExerciseDetails />} /> 

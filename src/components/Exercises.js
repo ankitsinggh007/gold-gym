@@ -14,7 +14,7 @@ const Exercises = ({exercises,setExercises,bodyPart}) => {
   //Adding fixed no.of exercises for each pages
   const indexOfLastExercise = currentPage * exercisesPerPage;//example : indexOfLastExercise=2 * 9 = 18 (indexOfLastExercise=18) so 2nd page is a last page here
   const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage; // example: indexOfFirstExercise = 18 - 9 = 9 (indexOfFirstExercise = 9) so that means this is the firstPage 
-  const currentExercises = exercises.slice(indexOfFirstExercise, indexOfLastExercise);
+  const currentExercises = exercises?.slice(indexOfFirstExercise, indexOfLastExercise);
   
   const paginate = (e,value) =>{
     setCurrentPage(value);

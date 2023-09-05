@@ -60,7 +60,7 @@ const Navbar = () => {
   return (
     <Stack 
       direction="row"
-      justifyContent='space-around'
+      justifyContent='space-evenly'
       sx={{gap:{sm:'122px', xs:'40px'},mt: {sm: '32px', xs:'20px'}, justifyContent:'none'}}
       px='20px'
     >
@@ -73,35 +73,13 @@ const Navbar = () => {
         alignItems='flex-end'
       >
         <NavLink  to='/' className='item'>Home</NavLink>
-        {LoggedInUserData.isAuthrized &&
-          <NavLink  to='/exercise'className='item'>Exercises</NavLink>}
+        
           {!LoggedInUserData.isAuthrized &&
             <NavLink style={{color:"grey"}} onClick={()=>alert(`login to open exercises tab`)}  className='item'>Exercises</NavLink>}
         <NavLink to="/about" className='item'> About</NavLink>
         <NavLink  to="/contact" className='item'> Contact</NavLink>
-        {
-  !LoggedInUserData.isAuthrized && 
+ 
 
-<Link style={{textDecoration:"none",color:"white"}} to={"/login"}><Button  variant="contained"  className="buttoni">Log In</Button></Link>
-}
-{
-  LoggedInUserData.isAuthrized && 
-<div style={{positon:"relative",marginLeft:"40px"}}>
-<Avatar
-  onClick={Toggle}
-  sx={{ bgcolor:pink[400] }}
-  alt={LoggedInUserData.firstName}
-  src="/broken-image.jpg"
-></Avatar>
-<div style={{display:`${Style}`}} className="avataar">
-  <ul >
-    <li>hi, {LoggedInUserData.firstName}</li>
-    <hr style={{width:"100%",margin:"auto"}}/>
-    <li onClick={Logout} style={{cursor:"pointer"}}>Logout</li>
-  </ul>
-  </div>
-</div>
-}
 
 
       </Stack>

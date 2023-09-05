@@ -3,6 +3,8 @@ import {Box, Stack, Typography} from '@mui/material'
 import Logo from '../assets/images/Logo-1.png'
 import { NavLink } from 'react-router-dom'
 import image from "../images/background/Home-page-footer.jpg"
+import {SlSocialInstagram,SlSocialFacebook} from "react-icons/sl"
+
 const Footer = () => {
   return (
     <footer class="main-footer"  style={style}>
@@ -33,10 +35,10 @@ const Footer = () => {
 
 										<span>Follow on Socials </span>
 
-										<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+										<a href="https://www.facebook.com" ><SlSocialFacebook/></a>
 
 
-										<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+										<a href="https://www.instagram.com"> <SlSocialInstagram/></a>
 
 
 									</div>
@@ -101,7 +103,7 @@ const Footer = () => {
 
 			<div class="footer-bottom">
 
-				<div class="copyright">Copyright 2022-2023 | Fuel4Fitness | Designed & Developed By Eaglematrix Pvt Ltd</div>
+				<div class="copyright">Copyright 2022-2023 | Fuel4Fitness | Designed & Developed By Ankit and Shree</div>
 
 			</div>
 
